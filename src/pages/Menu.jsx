@@ -4,13 +4,13 @@ import { useNavigate } from 'react-router-dom';
 
 // Use the same data as Gallery
 const galleryImages = [
-  { src: '/imgs/meal-1.jpg', category: 'Pizza', title: 'Pizza', desc: 'Hawaiian pizza with ham and pineapple', price: '$12', calories: 350 },
-  { src: '/imgs/meal-2.jpg', category: 'Beef', title: 'Beef Steaks', desc: 'Tasty beef steaks flying above cast iron grate with fire flames.', price: '$18', calories: 520 },
-  { src: '/imgs/meal-3.jpg', category: 'Burger', title: 'Burger', desc: 'Grass fed bison hamburger with chips & beer', price: '$10', calories: 600 },
-  { src: '/imgs/meal-4.jpg', category: 'Pizza', title: 'Levitation Pizza', desc: 'Levitation pizza on black background.', price: '$14', calories: 400 },
-  { src: '/imgs/meal-5.jpg', category: 'Chicken', title: 'Crispy Fried Chicken', desc: 'Golden brown chicken legs with a crunchy coating and juicy meat', price: '$13', calories: 480 },
-  { src: '/imgs/meal-6.jpg', category: 'Kebab', title: 'Lyulya Kebab', desc: 'Tender and juicy skewers of ground lamb or beef, flavored with aromatic spices and herbs', price: '$15', calories: 420 },
-  { src: '/imgs/meal-7.jpg', category: 'Frittata', title: 'Frittata', desc: 'Frittata or potato pie in a ceramic plate', price: '$9', calories: 300 },
+  { src: `${import.meta.env.BASE_URL}imgs/meal-1.jpg`, category: 'Pizza', title: 'Pizza', desc: 'Hawaiian pizza with ham and pineapple', price: '$12', calories: 350 },
+  { src: `${import.meta.env.BASE_URL}imgs/meal-2.jpg`, category: 'Beef', title: 'Beef Steaks', desc: 'Tasty beef steaks flying above cast iron grate with fire flames.', price: '$18', calories: 520 },
+  { src: `${import.meta.env.BASE_URL}imgs/meal-3.jpg`, category: 'Burger', title: 'Burger', desc: 'Grass fed bison hamburger with chips & beer', price: '$10', calories: 600 },
+  { src: `${import.meta.env.BASE_URL}imgs/meal-4.jpg`, category: 'Pizza', title: 'Levitation Pizza', desc: 'Levitation pizza on black background.', price: '$14', calories: 400 },
+  { src: `${import.meta.env.BASE_URL}imgs/meal-5.jpg`, category: 'Chicken', title: 'Crispy Fried Chicken', desc: 'Golden brown chicken legs with a crunchy coating and juicy meat', price: '$13', calories: 480 },
+  { src: `${import.meta.env.BASE_URL}imgs/meal-6.jpg`, category: 'Kebab', title: 'Lyulya Kebab', desc: 'Tender and juicy skewers of ground lamb or beef, flavored with aromatic spices and herbs', price: '$15', calories: 420 },
+  { src: `${import.meta.env.BASE_URL}imgs/meal-7.jpg`, category: 'Frittata', title: 'Frittata', desc: 'Frittata or potato pie in a ceramic plate', price: '$9', calories: 300 },
   { src: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80', category: 'Pizza', title: 'Modern Pizza', desc: 'Trendy pizza from the web', price: '$16', calories: 370 },
   { src: 'https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?auto=compress&w=600&q=80', category: 'Chicken', title: 'Grilled Chicken', desc: 'Perfectly grilled chicken breast', price: '$11', calories: 260 },
 ];

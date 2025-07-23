@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="row align-items-center mb-4">
           <div className="col-md-4 text-center text-md-start mb-3 mb-md-0">
             <div className="d-flex align-items-center gap-2 mb-2">
-              <img src="/imgs/favicon.png" alt="Mealify Logo" width={36} height={36} style={{ borderRadius: '50%' }} loading="lazy" />
+              <img src={`${import.meta.env.BASE_URL}imgs/favicon.png`} alt="Mealify Logo" width={36} height={36} style={{ borderRadius: '50%' }} loading="lazy" />
               <span className="fw-bold fs-5">Mealify</span>
             </div>
             <p className="small text-secondary mb-0">Mealify is a restaurant landing page that offers a delicious dining experience to its customers.</p>

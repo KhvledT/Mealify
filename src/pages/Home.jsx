@@ -53,7 +53,7 @@ const Home = () => {
             </div>
             {/* Hero image */}
             <div className="col-12 col-md-6 text-center mb-4 mb-md-0">
-              <img src="/imgs/hero-img.png" alt="Delicious Dish" className="hero-image mx-auto" loading="lazy" />
+              <img src={`${import.meta.env.BASE_URL}imgs/hero-img.png`} alt="Delicious Dish" className="hero-image mx-auto" loading="lazy" />
             </div>
           </div>
         </div>
