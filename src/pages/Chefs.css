@@ -1,0 +1,61 @@
+/* Chefs styles */
+section.bg-white {
+  background: #FAFBFC !important;
+}
+.chef-card {
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(206,18,18,0.08);
+  min-height: 340px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.22s ease-in-out !important;
+}
+.chef-card:hover {
+  transform: translateY(-8px) scale(1.03) !important;
+  box-shadow: 0 8px 32px 0 rgba(206,18,18,0.16);
+}
+.chef-card img {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  object-fit: cover;
+  min-height: 320px;
+  max-height: 340px;
+  width: 100%;
+}
+.chef-card .card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.chef-card .card-title {
+  font-weight: 700;
+  color: #ce1212;
+}
+.chef-card .card-text {
+  color: #555;
+}
+/* تأثير hover موحد لجميع البطاقات */
+.feature-card,
+.health-card,
+.testimonial-card,
+.howit-card,
+.chef-card,
+.featured-card,
+.gallery-card,
+.contact-info-card {
+  transition: transform 0.22s cubic-bezier(.4,1.5,.5,1), box-shadow 0.22s;
+}
+.feature-card:hover,
+.health-card:hover,
+.testimonial-card:hover,
+.howit-card:hover,
+.chef-card:hover,
+.featured-card:hover,
+.gallery-card:hover,
+.contact-info-card:hover {
+  transform: scale(1.035);
+  box-shadow: 0 8px 32px 0 rgba(206,18,18,0.16);
+  z-index: 2;
+} 
