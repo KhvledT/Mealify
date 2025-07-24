@@ -58,4 +58,9 @@ section.bg-white {
   transform: scale(1.035);
   box-shadow: 0 8px 32px 0 rgba(206,18,18,0.16);
   z-index: 2;
+}
+.dark .chef-card {
+  background: #23272b !important;
+  color: #f1f1f1 !important;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18) !important;
 } 

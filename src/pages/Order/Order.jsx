@@ -10,6 +10,10 @@ const Order = () => {
   const coupon = location.state?.coupon || null;
 
   React.useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }, []);
+
+  React.useEffect(() => {
     if (!meal) navigate('/menu', { replace: true });
   }, [meal, navigate]);
 
@@ -42,7 +46,7 @@ const Order = () => {
     <section className="order-section d-flex align-items-center justify-content-center" style={{minHeight:'100vh',background:'#fafbfc'}}>
       <div className="order-card-modern bg-white rounded-4 shadow-lg p-4 position-relative" style={{maxWidth:400, width:'100%'}}>
         <div className="order-accent-bar mb-3"></div>
-        <button className="order-close-btn btn btn-sm position-absolute top-0 end-0 m-2" onClick={() => navigate('/menu')} title="Close">
+        <button className="order-close-btn btn btn-sm position-absolute top-0 end-0 m-2" onClick={() => navigate(-1)} title="Close">
           <i className="fa-solid fa-xmark"></i>
         </button>
         <div className="text-center">

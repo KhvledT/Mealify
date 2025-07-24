@@ -1,13 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { useLocation , createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout';
-import Home from './pages/Home';
-import Chefs from './pages/Chefs';
-import Gallery from './pages/Gallery';
-import Contact from './pages/Contact';
-import Menu from './pages/Menu';
-import Order from './pages/Order';
+import Home from './pages/Home/Home.jsx';
+import Chefs from './pages/Chefs/Chefs.jsx';
+import Gallery from './pages/Gallery/Gallery.jsx';
+import Contact from './pages/Contact/Contact.jsx';
+import Menu from './pages/Menu/Menu.jsx';
+import Order from './pages/Order/Order.jsx';
 import './App.css';
+import Navbar from './components/Navbar/Navbar.jsx';
+import Footer from './components/Footer/Footer.jsx';
+import CategoryMenuPage from './pages/Menu/CategoryMenuPage.jsx';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -17,21 +20,37 @@ function ScrollToTop() {
   return null;
 }
 
+
 function App() {
+
+
+  const routes = createBrowserRouter([
+    {
+      path: '/',
+      element: <Layout />,
+      children: [
+        { path: '/', element: <Home /> },
+        { path: '/chefs', element: <Chefs /> },
+        { path: '/gallery', element: <Gallery /> },
+        { path: '/menu', element: <Menu /> },
+        { path: '/menu/pizza', element: <CategoryMenuPage category="Pizza" /> },
+        { path: '/menu/burger', element: <CategoryMenuPage category="Burger" /> },
+        { path: '/menu/chicken', element: <CategoryMenuPage category="Chicken" /> },
+        { path: '/menu/grill', element: <CategoryMenuPage category="Grill" /> },
+        { path: '/menu/salad', element: <CategoryMenuPage category="Salad" /> },
+        { path: '/menu/pasta', element: <CategoryMenuPage category="Pasta" /> },
+        { path: '/menu/sushi', element: <CategoryMenuPage category="Sushi" /> },
+        { path: '/menu/dessert', element: <CategoryMenuPage category="Dessert" /> },
+        { path: '/menu/drinks', element: <CategoryMenuPage category="Drinks" /> },
+        { path: '/contact', element: <Contact /> },
+        { path: '/order', element: <Order /> },
+    ]
+    }
+  ]);
   return (
-    <Router basename="/Mealify">
-      <ScrollToTop />
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/chefs" element={<Chefs />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/order" element={<Order />} />
-        </Routes>
-      </Layout>
-    </Router>
+      <>
+      <RouterProvider router={routes} />
+      </>
   );
 }
 

@@ -143,3 +143,26 @@ hr.my-5 {
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
 } 
+
+.dark .gallery-tabs {
+  background: #23272b !important;
+  border-bottom: 1px solid #444 !important;
+}
+.dark .gallery-tabs .nav-link {
+  color: #f1c40f !important;
+  background: none !important;
+}
+.dark .gallery-tabs .nav-link i {
+  color: #ce1212 !important;
+}
+.dark .gallery-tabs .nav-link.active {
+  background: #fff2 !important;
+  color: #fff !important;
+  border-bottom: 2px solid #ce1212 !important;
+}
+.dark .gallery-tabs .nav-link.active i {
+  color: #ce1212 !important;
+}
+.dark hr.my-5 {
+  border-top: 2px solid #444 !important;
+} 

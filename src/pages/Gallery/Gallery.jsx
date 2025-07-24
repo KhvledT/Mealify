@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './Gallery.css';
 import { motion, AnimatePresence } from 'framer-motion';
-import FeaturedDishCard from '../components/FeaturedDishCard';
-import GalleryCard from '../components/GalleryCard';
+import FeaturedDishCard from '../../components/FeaturedDishCard/FeaturedDishCard.jsx';
+import GalleryCard from '../../components/GalleryCard/GalleryCard.jsx';
 
 // Gallery images data (high quality)
 const galleryImages = [
@@ -90,12 +90,20 @@ const Gallery = () => {
           variants={gridVariants}
           initial="visible"
           animate="visible"
+          key={active}
         >
-          <AnimatePresence initial={false}>
+          <AnimatePresence mode="wait">
             {filtered.map((img, idx) => (
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4" key={img.src + idx}>
+              <motion.div
+                className="col-12 col-sm-6 col-md-4 col-lg-4"
+                key={img.src + idx}
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 40 }}
+                transition={{ duration: 0.35, type: 'spring', bounce: 0.18 }}
+              >
                 <GalleryCard img={img} />
-              </div>
+              </motion.div>
             ))}
           </AnimatePresence>
         </motion.div>

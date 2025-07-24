@@ -126,3 +126,51 @@ section.bg-white {
   background: #fff;
   border-radius: 0 0 12px 12px;
 } 
+.dark .contact-info-card {
+  background: #23272b !important;
+  color: #f1f1f1 !important;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18) !important;
+}
+.dark .card {
+  background: #23272b !important;
+  color: #f1f1f1 !important;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18) !important;
+}
+.dark .contact-form {
+  background: #23272b !important;
+  color: #f1f1f1 !important;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18) !important;
+} 
+.dark .contact-form input,
+.dark .contact-form textarea {
+  background: #18191a !important;
+  color: #f1f1f1 !important;
+  border: 1.5px solid #333 !important;
+}
+.dark .faq-section {
+  background: #23272b !important;
+  color: #f1f1f1 !important;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18) !important;
+}
+.dark .accordion-item {
+  background: #18191a !important;
+  color: #f1f1f1 !important;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10) !important;
+}
+.dark .accordion-button {
+  background: #23272b !important;
+  color: #ffd600 !important;
+}
+.dark .accordion-button:not(.collapsed) {
+  background: #18191a !important;
+  color: #fff !important;
+}
+.dark .accordion-body {
+  background: #18191a !important;
+  color: #f1f1f1 !important;
+} 
+.dark .contact-form input::placeholder,
+.dark .contact-form textarea::placeholder {
+  color: #e0e0e0 !important;
+  opacity: 1 !important;
+} 

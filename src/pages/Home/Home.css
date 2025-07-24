@@ -15,11 +15,20 @@
   font-weight: bold;
   font-size: 1.2rem;
   box-shadow: 0 2px 12px 0 rgba(206,18,18,0.10);
-  transition: background 0.2s, box-shadow 0.2s;
+  transition: background 0.4s cubic-bezier(.4,1.5,.5,1), box-shadow 0.2s, transform 0.18s;
 }
 .hero-section .btn-danger:hover {
-  background: #a30e0e;
+  background: linear-gradient(90deg,#b23a48 60%,#ce1212 100%);
   box-shadow: 0 4px 24px 0 rgba(206,18,18,0.18);
+  transform: scale(1.07);
+}
+.dark .btn-danger, .dark .order-btn-modern {
+  background: #ffd600 !important;
+  transition: background 0.25s, box-shadow 0.2s, transform 0.18s;
+}
+.dark .btn-danger:hover, .dark .order-btn-modern:hover {
+  background:#ffd600  !important;
+  color: #23272b !important;
 }
 /* Hero image with drop-shadow filter only, visible on all screens */
 .hero-image {
@@ -155,4 +164,33 @@
 .howit-card .fa-solid {
   color: #17a2b8 !important;
   filter: drop-shadow(0 2px 8px rgba(52, 152, 219, 0.10));
+}
+.home-with-sidebar {
+  display: flex;
+}
+.sidebar-wrapper {
+  min-width: 260px;
+  max-width: 320px;
+  margin-inline-end: 2rem;
+  display: block;
+}
+.home-content {
+  flex: 1;
+}
+@media (max-width: 1650px) {
+  .sidebar-wrapper {
+    display: none;
+  }
+  .home-with-sidebar {
+    display: block;
+  }
+}
+.dark .hero-section,
+.dark .features-section,
+.dark .stats-section,
+.dark .healthy-section,
+.dark .testimonials-section,
+.dark .howit-section {
+  background: #23272b !important;
+  color: #f1f1f1 !important;
 }

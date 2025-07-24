@@ -117,8 +117,8 @@
     max-width: 90px;
   }
 }
-@media (max-width: 1649px) {
+/* @media (max-width: 1649px) {
   .sidebar {
     display: none !important;
   }
-} 
+}  */

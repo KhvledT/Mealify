@@ -1,7 +1,7 @@
 import './Chefs.css';
 import React from 'react';
 import { motion } from 'framer-motion';
-import ChefCard from '../components/ChefCard';
+import ChefCard from '../../components/ChefCard/ChefCard.jsx';
 
 // Chefs data (Arab and foreign, new high quality images)
 const chefs = [
@@ -109,7 +109,7 @@ const Chefs = () => {
         <h2 className="mb-4 text-danger fw-bold text-center">Our Professional Chefs</h2>
         <div className="row justify-content-center">
           {chefs.map((chef, idx) => (
-            <div className="col-md-6 col-lg-4 mb-4" key={idx} >
+            <div className="col-12 col-lg-6 col-xl-4 mb-4" key={idx} >
               <ChefCard chef={chef} />
             </div>
           ))}

@@ -52,6 +52,75 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.dark {
+  background-color: #18191a !important;
+  color: #f1f1f1 !important;
+}
+.dark body, .dark #root {
+  background-color: #18191a !important;
+  color: #f1f1f1 !important;
+}
+.dark a, .dark .nav-link {
+  color: #ffd600 !important;
+}
+.dark a:hover, .dark .nav-link.active {
+  color: #fff700 !important;
+}
+.dark .navbar, .dark .bg-white, .dark .container, .dark .rounded-4, .dark .shadow, .dark .order-card-modern, .dark .menu-card, .dark .menu-offer-card, .dark .featured-card, .dark .gallery-card {
+  background-color: #23272b !important;
+  color: #f1f1f1 !important;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18) !important;
+}
+.dark .btn, .dark .btn-danger, .dark .btn-outline-dark, .dark .btn-warning {
+  background: #333 !important;
+  color: #ffd600 !important;
+  border-color: #ffd600 !important;
+}
+.dark .btn-danger, .dark .order-btn-modern {
+  background: linear-gradient(90deg,#ffd600 60%,#b23a48 100%) !important;
+  color: #23272b !important;
+  border: none !important;
+}
+.dark .btn-danger:hover, .dark .order-btn-modern:hover {
+  background: linear-gradient(90deg,#b23a48 60%,#ffd600 100%) !important;
+  color: #fff !important;
+}
+.dark .bg-danger, .dark .badge.bg-danger {
+  background: #ffd600 !important;
+  color: #b23a48 !important;
+}
+.dark .bg-light, .dark .bg-featured {
+  background: #23272b !important;
+  color: #f1f1f1 !important;
+}
+.dark .sale-banner span {
+  background: #fff700 !important;
+  color: #b23a48 !important;
+}
+.dark .order-section {
+  background: #23272b !important;
+}
+.dark .order-card-modern {
+  background: #18191a !important;
+  color: #f1f1f1 !important;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.28) !important;
+}
+.dark .btn-outline-danger {
+  background: transparent !important;
+  color: #ffd600 !important;
+  border: 2px solid #ffd600 !important;
+  font-weight: 700 !important;
+}
+.dark .btn-outline-danger:hover,
+.dark .btn-outline-danger:focus,
+.dark .btn-outline-danger.active {
+  background: #ffd600 !important;
+  color: #23272b !important;
+  border: 2px solid #ffd600 !important;
+  font-weight: 900 !important;
+  box-shadow: 0 2px 12px 0 rgba(255,214,0,0.10) !important;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

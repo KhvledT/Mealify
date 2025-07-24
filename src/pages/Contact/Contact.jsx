@@ -1,8 +1,8 @@
 import './Contact.css';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import ContactInfoCard from '../components/ContactInfoCard';
-import FaqAccordionItem from '../components/FaqAccordionItem';
+import ContactInfoCard from '../../components/ContactInfoCard/ContactInfoCard.jsx';
+import FaqAccordionItem from '../../components/FaqAccordionItem/FaqAccordionItem.jsx';
 
 const faqs = [
   {
